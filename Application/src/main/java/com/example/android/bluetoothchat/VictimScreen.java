@@ -18,7 +18,7 @@ import com.example.android.common.activities.SampleActivityBase;
  * Created by omart on 12/3/2017.
  */
 
-public class VictimScreen extends SampleActivityBase implements VictimChat.OnTooEarlySubmit {
+public class VictimScreen extends SampleActivityBase {
     
     private VictimChat currentFragment;
 
@@ -79,21 +79,5 @@ public class VictimScreen extends SampleActivityBase implements VictimChat.OnToo
         }
     }
 
-    public void onUnconnectedSubmit(){
 
-        VictimChat reloadedFragment = new VictimChat();
-        reloadedFragment.setLat(latitude);
-        reloadedFragment.setLong(longitude);
-        reloadedFragment.setType("Victim");
-
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.detach(currentFragment);
-        transaction.attach(reloadedFragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
-
-        currentFragment = reloadedFragment;
-        
-
-    }
 }

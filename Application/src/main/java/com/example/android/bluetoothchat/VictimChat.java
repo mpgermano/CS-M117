@@ -57,8 +57,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
-import android.util.Log;
-
 import org.w3c.dom.Text;
 
 /**
@@ -66,7 +64,8 @@ import org.w3c.dom.Text;
  */
 public class VictimChat extends Fragment {
 
-    private static final String TAG = "VictimFrag";
+    private static final Person person = new Person();
+    private static final String TAG = "BluetoothChatFragment";
     private static int mView = R.layout.submit;
     // Intent request codes
     private static final int REQUEST_CONNECT_DEVICE_SECURE = 1;
@@ -84,12 +83,6 @@ public class VictimChat extends Fragment {
     private Button mSendButton;
     private String mType;
     private Context mContext;
-
-    OnTooEarlySubmit mCallback;
-
-    public interface OnTooEarlySubmit {
-        public void onUnconnectedSubmit();
-    }
     /**
      * Name of the connected device
      */
@@ -113,20 +106,6 @@ public class VictimChat extends Fragment {
      * Member object for the chat services
      */
     private BluetoothChatService mChatService = null;
-
-    @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-
-        // This makes sure that the container activity has implemented
-        // the callback interface. If not, it throws an exception
-        try {
-            mCallback = (OnTooEarlySubmit) activity;
-        } catch (ClassCastException e) {
-            throw new ClassCastException(activity.toString()
-                    + " must implement OnTooEarlySubmit");
-        }
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -227,17 +206,18 @@ public class VictimChat extends Fragment {
                 View view = getView();
                 if (null != view) {
                     TextView textView = (TextView) view.findViewById(R.id.edit_text_out);
-                    String message = textView.getText().toString();
-                    
-                    vict_name.setText("NAME: "+message);
-                    String a, c, h;
-
+                    person.setName(textView.getText().toString());
+                    vict_name.setText("NAME: "+ person.getName());
                     viewFlipper.showNext();
-                    a = String.valueOf(age.getSelectedItem());
-                    c = String.valueOf(help.getSelectedItem());
-                    h = String.valueOf(condition.getSelectedItem());
-
-                    sendMessage(message+":"+ a  +":"+c +":"+ h + ":" + lat + ":" + lon);
+                    person.setAge(String.valueOf(age.getSelectedItem()));
+                    person.setCondition(String.valueOf(help.getSelectedItem()));
+                    person.setHelp(String.valueOf(condition.getSelectedItem()));
+                    try {
+                        person.setLocation(Double.parseDouble(lat), Double.parseDouble(lon) );
+                    } catch (NumberFormatException e) {
+                        person.setLocation(-999.9,-999.9);
+                    }
+                    sendMessage(person.getInformation());
                 }
             }
         });
@@ -249,13 +229,13 @@ public class VictimChat extends Fragment {
     }
     public void setLat(String lat){
         if (lat == "-999.0")
-            this.lat = "n/a";
+            this.lat = "na";
         else
             this.lat = lat;
     }
     public void setLong(String lon){
         if (lon == "-999.0")
-            this.lon = "n/a";
+            this.lon = "na";
         else
             this.lon = lon;
     }
@@ -279,9 +259,7 @@ public class VictimChat extends Fragment {
     private void sendMessage(String message) {
         // Check that we're actually connected before trying anything
         if (mChatService.getState() != BluetoothChatService.STATE_CONNECTED) {
-            
             Toast.makeText(getActivity(), R.string.not_connected, Toast.LENGTH_SHORT).show();
-            mCallback.onUnconnectedSubmit();
             return;
         }
 

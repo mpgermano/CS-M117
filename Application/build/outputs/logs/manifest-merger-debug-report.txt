@@ -1,113 +1,113 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:18:1-62:12
+ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:18:1-62:12
 	package
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:19:5-48
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:19:5-48
 	android:versionName
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:22:5-30
-		INJECTED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:22:5-30
+		INJECTED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml
 	android:versionCode
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:21:5-28
-		INJECTED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:21:5-28
+		INJECTED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:20:5-63
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:20:5-63
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:26:5-73
+ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:26:5-73
 	android:name
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:26:22-71
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:26:22-71
 uses-permission#android.permission.BLUETOOTH
-ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:27:5-67
+ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:27:5-67
 	android:name
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:27:22-65
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:27:22-65
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:28:5-78
+ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:28:5-78
 	android:name
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:28:22-76
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:28:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:29:5-81
+ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:29:5-81
 	android:name
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:29:22-78
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:29:22-78
 uses-feature#android.hardware.location.gps
-ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:31:5-65
+ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:31:5-65
 	android:name
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:31:19-63
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:31:19-63
 application
-ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:34:5-60:19
-MERGED from [com.android.support:gridlayout-v7:25.0.1] C:\Users\omart\.android\build-cache\283504cc188332fbb83973fce545bf609de317fe\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\omart\.android\build-cache\e92c80029f77827f2c5ca3f59b5356512e7298ce\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:25.0.1] C:\Users\omart\.android\build-cache\9a9475891be454dcc2bb3bed6f5fd20ea34bd2d2\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.0.1] C:\Users\omart\.android\build-cache\4033935826e9acc1512bcc2f673ac12314fa3eb3\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.0.1] C:\Users\omart\.android\build-cache\3186cc2a6e7b0fe7ff872a908dcf287492e1f275\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.0.1] C:\Users\omart\.android\build-cache\d7b986f4dbbed9d965ffc97703f173a4d3d715c0\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.0.1] C:\Users\omart\.android\build-cache\bd3df56a22a00160fc4dbb6342581d9f150ee461\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.0.1] C:\Users\omart\.android\build-cache\465a8c0293518c3292dedc5720cc44a82e1316a0\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.0.1] C:\Users\omart\.android\build-cache\ee15f5eb860eff8d3cffd6ab4f08b6c05f3d1861\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.0.1] C:\Users\omart\.android\build-cache\441470abd3a18375e233406bd779d5ffeefec500\output\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-compat:25.0.1] C:\Users\omart\.android\build-cache\f5476fea595e418df8127156e79c707f370261a6\output\AndroidManifest.xml:25:5-20
+ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:34:5-60:19
+MERGED from [com.android.support:gridlayout-v7:25.0.1] /Users/Michaelgermano/.android/build-cache/c718f34c1d28330d32df96ea3682be4c3ef8a7fb/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:25.0.1] /Users/Michaelgermano/.android/build-cache/60fd9c49a1010a876f5afdf728c03ba6240cc1d3/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:25.0.1] /Users/Michaelgermano/.android/build-cache/f54ed6cac5b9c6631f31963defc9c9ebdb7a050f/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.0.1] /Users/Michaelgermano/.android/build-cache/80c39455c6e633634a3a1248335fcb0c6259edcb/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.0.1] /Users/Michaelgermano/.android/build-cache/813b49ff7a1237d4bf0bbac59ac8e67095a74c5c/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.1] /Users/Michaelgermano/.android/build-cache/dd6a7ab5736cac5f8ba2d11e869570f63a53b699/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.0.1] /Users/Michaelgermano/.android/build-cache/ffda74e905878f55ecdd95550039c674e9434cda/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.1] /Users/Michaelgermano/.android/build-cache/46474459ca398ccebcd3d481f254eae100740055/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] /Users/Michaelgermano/.android/build-cache/6549ca02cc66b63ea378c2ca459038767a1404ce/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.0.1] /Users/Michaelgermano/.android/build-cache/b77c23682befade7ab7b942f1e29888b876b24bd/output/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:25.0.1] /Users/Michaelgermano/.android/build-cache/90ecfc0537b1ee0a842a50248709a7d6245b1774/output/AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:37:9-33
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:37:9-33
 	android:allowBackup
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:35:9-35
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:35:9-35
 	android:icon
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:36:9-42
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:36:9-42
 	android:theme
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:38:9-40
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:38:9-40
 activity#com.example.android.bluetoothchat.MainActivity
-ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:40:9-48:20
+ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:40:9-48:20
 	android:label
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:43:13-37
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:43:13-37
 	android:configChanges
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:42:13-63
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:42:13-63
 	android:name
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:41:13-41
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:41:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:44:13-47:29
+ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:44:13-47:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:45:17-68
+ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:45:17-68
 	android:name
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:45:25-66
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:45:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:46:17-76
+ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:46:17-76
 	android:name
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:46:27-74
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:46:27-74
 activity#com.example.android.bluetoothchat.VictimScreen
-ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:49:9-59
+ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:49:9-59
 	android:name
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:49:19-47
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:49:19-47
 activity#com.example.android.bluetoothchat.ResponderScreen
-ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:50:9-62
+ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:50:9-62
 	android:name
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:50:19-50
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:50:19-50
 activity#com.example.android.bluetoothchat.DeviceListActivity
-ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:54:9-58:63
+ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:54:9-58:63
 	android:label
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:57:13-50
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:57:13-50
 	android:configChanges
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:56:13-63
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:56:13-63
 	android:theme
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:58:13-61
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:58:13-61
 	android:name
-		ADDED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml:55:13-47
+		ADDED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml:55:13-47
 uses-sdk
-INJECTED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:gridlayout-v7:25.0.1] C:\Users\omart\.android\build-cache\283504cc188332fbb83973fce545bf609de317fe\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\omart\.android\build-cache\e92c80029f77827f2c5ca3f59b5356512e7298ce\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:25.0.1] C:\Users\omart\.android\build-cache\9a9475891be454dcc2bb3bed6f5fd20ea34bd2d2\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:25.0.1] C:\Users\omart\.android\build-cache\4033935826e9acc1512bcc2f673ac12314fa3eb3\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.0.1] C:\Users\omart\.android\build-cache\3186cc2a6e7b0fe7ff872a908dcf287492e1f275\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.0.1] C:\Users\omart\.android\build-cache\d7b986f4dbbed9d965ffc97703f173a4d3d715c0\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.0.1] C:\Users\omart\.android\build-cache\bd3df56a22a00160fc4dbb6342581d9f150ee461\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.0.1] C:\Users\omart\.android\build-cache\465a8c0293518c3292dedc5720cc44a82e1316a0\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:25.0.1] C:\Users\omart\.android\build-cache\ee15f5eb860eff8d3cffd6ab4f08b6c05f3d1861\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.0.1] C:\Users\omart\.android\build-cache\441470abd3a18375e233406bd779d5ffeefec500\output\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-compat:25.0.1] C:\Users\omart\.android\build-cache\f5476fea595e418df8127156e79c707f370261a6\output\AndroidManifest.xml:21:5-23:58
+INJECTED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:gridlayout-v7:25.0.1] /Users/Michaelgermano/.android/build-cache/c718f34c1d28330d32df96ea3682be4c3ef8a7fb/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.0.1] /Users/Michaelgermano/.android/build-cache/60fd9c49a1010a876f5afdf728c03ba6240cc1d3/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:25.0.1] /Users/Michaelgermano/.android/build-cache/f54ed6cac5b9c6631f31963defc9c9ebdb7a050f/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.0.1] /Users/Michaelgermano/.android/build-cache/80c39455c6e633634a3a1248335fcb0c6259edcb/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.0.1] /Users/Michaelgermano/.android/build-cache/813b49ff7a1237d4bf0bbac59ac8e67095a74c5c/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.0.1] /Users/Michaelgermano/.android/build-cache/dd6a7ab5736cac5f8ba2d11e869570f63a53b699/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.0.1] /Users/Michaelgermano/.android/build-cache/ffda74e905878f55ecdd95550039c674e9434cda/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.0.1] /Users/Michaelgermano/.android/build-cache/46474459ca398ccebcd3d481f254eae100740055/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] /Users/Michaelgermano/.android/build-cache/6549ca02cc66b63ea378c2ca459038767a1404ce/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.0.1] /Users/Michaelgermano/.android/build-cache/b77c23682befade7ab7b942f1e29888b876b24bd/output/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:25.0.1] /Users/Michaelgermano/.android/build-cache/90ecfc0537b1ee0a842a50248709a7d6245b1774/output/AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.0.1] C:\Users\omart\.android\build-cache\9a9475891be454dcc2bb3bed6f5fd20ea34bd2d2\output\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:25.0.1] /Users/Michaelgermano/.android/build-cache/f54ed6cac5b9c6631f31963defc9c9ebdb7a050f/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml
+		INJECTED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\omart\Desktop\LodeStar\LodeStar\Application\src\main\AndroidManifest.xml
+		INJECTED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/Michaelgermano/Coding_Projects/CS-M117/Application/src/main/AndroidManifest.xml
