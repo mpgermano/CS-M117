@@ -17,10 +17,13 @@
 
 package com.example.android.bluetoothchat;
 
+import android.bluetooth.BluetoothAdapter;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import java.util.Random;
 
 /**
  * A simple launcher activity containing a summary sample description, sample log and a custom
@@ -32,21 +35,29 @@ import android.view.View;
 public class MainActivity extends Activity {
 
     public static final String TAG = "MainActivity";
+    private BluetoothAdapter bta = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        bta = BluetoothAdapter.getDefaultAdapter();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
     public void victim(View v) {
         Intent intent = new Intent(MainActivity.this, VictimScreen.class);
+        Random rand = new Random();
+        int n = rand.nextInt(999999)+1;
+        bta.setName("VICTIM_" + Integer.toString(n));
         startActivity(intent);
         finish();
     }
 
     public void responder(View v) {
         Intent intent = new Intent(MainActivity.this, ResponderScreen.class);
+        Random rand = new Random();
+        int n = rand.nextInt(999999)+1;
+        bta.setName("RESPONDER_" + Integer.toString(n));
         startActivity(intent);
         finish();
     }

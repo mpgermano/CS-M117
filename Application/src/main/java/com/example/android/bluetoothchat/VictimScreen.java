@@ -18,10 +18,10 @@ import com.example.android.common.activities.SampleActivityBase;
  * Created by omart on 12/3/2017.
  */
 
-public class VictimScreen extends SampleActivityBase {
+public class VictimScreen extends SampleActivityBase implements VictimChat.OnTooEarlySubmit {
+    
+    private VictimChat currentFragment;
 
-    private FragmentTransaction transaction;
-    private VictimChat fragment;
     String latitude;
     String longitude;
     Location location;
@@ -54,19 +54,46 @@ public class VictimScreen extends SampleActivityBase {
             locManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000L, 500.0f, mLocationListener);
             location = locManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
 
-            latitude = Double.toString(location.getLatitude());
-            longitude = Double.toString(location.getLongitude());
+            // getLastKnownLocation can be null if it is not known
+            if (location != null){
+                latitude = Double.toString(location.getLatitude());
+                longitude = Double.toString(location.getLongitude());
+  	        }
+            else {
+                //hacky but will work if we check before displaying
+                latitude = "-999.0";
+                longitude = "-999.0";
+            }
         }
 
-
         if (savedInstanceState == null) {
-            transaction = getSupportFragmentManager().beginTransaction();
-            fragment = new VictimChat();
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            VictimChat fragment = new VictimChat();
             fragment.setLat(latitude);
             fragment.setLong(longitude);
             fragment.setType("Victim");
             transaction.replace(R.id.sample_content_fragment, fragment);
             transaction.commit();
+
+            currentFragment = fragment;
         }
+    }
+
+    public void onUnconnectedSubmit(){
+
+        VictimChat reloadedFragment = new VictimChat();
+        reloadedFragment.setLat(latitude);
+        reloadedFragment.setLong(longitude);
+        reloadedFragment.setType("Victim");
+
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.detach(currentFragment);
+        transaction.attach(reloadedFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+
+        currentFragment = reloadedFragment;
+        
+
     }
 }
